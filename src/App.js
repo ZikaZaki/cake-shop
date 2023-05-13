@@ -9,6 +9,7 @@ import NewCakeContainer from "./components/NewCakeContainer";
 import ItemContainer from "./components/ItemContainer";
 import UserContainer from "./components/UserContainer";
 import ParentComponent from "./components/ParentComponent";
+import Form from "./components/Form";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <div className="App">
         <UserContainer />
         <ParentComponent />
+        <Form />
         {/* <ItemContainer cake />
         <ItemContainer />
         <HooksCakeContainer/>
