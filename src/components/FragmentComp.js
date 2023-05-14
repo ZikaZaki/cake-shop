@@ -2,11 +2,10 @@ import React from "react"
 
 const FragmentComp = () => {
     return (
-        <>
-        
-            <div>FragmentComp</div>
-            <p>Details about FragmentComp</p>
-        </>
+        <React.Fragment>
+            <div>Fragment Demo</div>
+            <p>Details about Fragment</p>
+        </React.Fragment>
     )
 }
 

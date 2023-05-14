@@ -11,12 +11,14 @@ import UserContainer from "./components/UserContainer";
 import ParentComponent from "./components/ParentComponent";
 import Form from "./components/Form";
 import LifecycleA from "./components/LifecycleA";
+import FragmentComp from "./components/FragmentComp";
 
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <LifecycleA />
+        <FragmentComp />
+        {/* <LifecycleA /> */}
         {/* <ParentComponent /> */}
         {/* <Form /> */}
         {/* <UserContainer /> */}
