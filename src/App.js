@@ -13,13 +13,16 @@ import Form from "./components/Form";
 import LifecycleA from "./components/LifecycleA";
 import FragmentComp from "./components/FragmentComp";
 import Table from "./components/Table";
+import PureComp from "./components/PureComp";
+import ParentComp from "./components/ParentComp";
 
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <FragmentComp />
-        <Table />
+        <ParentComp />
+        {/* <FragmentComp /> */}
+        {/* <Table /> */}
         {/* <LifecycleA /> */}
         {/* <ParentComponent /> */}
         {/* <Form /> */}
