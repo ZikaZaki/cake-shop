@@ -21,8 +21,8 @@ function Columns() {
         {
             items.map((item) => (
                 <React.Fragment key={item.id}>
-                    <h1>Title</h1>
-                    <p>{item.name}</p>
+                    <th>Title</th>
+                    <td>{item.name}</td>
                 </React.Fragment>
             ))
         }
