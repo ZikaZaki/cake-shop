@@ -12,12 +12,14 @@ import ParentComponent from "./components/ParentComponent";
 import Form from "./components/Form";
 import LifecycleA from "./components/LifecycleA";
 import FragmentComp from "./components/FragmentComp";
+import Table from "./components/Table";
 
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
         <FragmentComp />
+        <Table />
         {/* <LifecycleA /> */}
         {/* <ParentComponent /> */}
         {/* <Form /> */}
