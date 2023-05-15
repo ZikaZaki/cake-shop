@@ -8,7 +8,7 @@ class RefsDemo extends Component {
     // =========================================Refs with Callback=========================================
     // This is an old approach for using refs, by defining a callback function in the constructor
     //  and passing it to the cbRef.
-    // NOTE: This approach is not recommended, cause it's not compatible with async rendering.
+    // NOTE: This approach is NOT recommended, cause it's not compatible with async rendering.
     // ====================================================================================================
     this.setCbRef = element => {
         this.cbRef = element
