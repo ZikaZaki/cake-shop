@@ -15,6 +15,10 @@ class FocusInput extends Component {
   render() {
     return (
       <div>
+        {/* ============================================================================== 
+            NOTE: It's possible to use ref with child component from a parent component, 
+            but only with CLASS components (not FUNCTION components)
+            ============================================================================== */}
         <Input ref={this.componentRef} />
         <button onClick={this.clickHandler}>Focus Input</button>
       </div>
