@@ -8,7 +8,7 @@ class FocusInput extends Component {
   }
 
   clickHandler = () => {
-    // Note: the focusInput method is defined in the Input component
+    // NOTE: the focusInput method is defined in the Input component
     this.componentRef.current.focusInput()
   }
 
