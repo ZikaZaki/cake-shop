@@ -10,7 +10,7 @@ import React from "react";
 // -----------------------------------------------------------------------
 // Resources: https://reactjs.org/docs/higher-order-components.html
 // =================================================================================
-const withCounter = (WrappedComponent) => {
+const withCounter = (WrappedComponent, incrementValue = 1) => {
     class WithCounter extends React.Component {
       constructor(props) {
         super(props)
@@ -22,13 +22,20 @@ const withCounter = (WrappedComponent) => {
 
       incrementCount = () => {
         this.setState((prevState) => {
-            return { count: prevState.count + 1 }
+            return { count: prevState.count + incrementValue }
         })
       }
 
       render() {
-        return <WrappedComponent count={this.state.count} incrementCount={this.incrementCount} />
-        // return <WrappedComponent {...this.props} />
+        return <WrappedComponent count={this.state.count} incrementCount={this.incrementCount} {...this.props} />
+        // ======================================{...this.props}=====================================================
+        // NOTE: If we try to pass the props to the wrapped component, we will not be able to access
+        // the props in the wrapped component. This is because the props are being overwritten by the
+        // higher order component. Therefore, we need to pass the remaining props to the wrapped component
+        // using the spread operator.
+        // Example:
+        // return <WrappedComponent count={this.state.count} incrementCount={this.incrementCount} {...this.props} />
+        // ==========================================================================================================
       }
     }
 

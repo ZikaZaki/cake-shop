@@ -28,8 +28,8 @@ function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <ClickCounter />
-        <HoverCounter />
+        <ClickCounter name='ZikaZaki' />
+        <HoverCounter name='ZikaZaki'/>
         {/* <ErrorBoundary>
           <Hero heroName="Batman" />
         </ErrorBoundary>
