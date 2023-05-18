@@ -24,12 +24,14 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import ClickCounter from "./components/ClickCounter";
 import HoverCounter from "./components/HoverCounter";
 import ClickCounterTwo from "./components/ClickCounterTwo";
+import HoverCounterTwo from "./components/HoverCounterTwo";
 
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
         <ClickCounterTwo />
+        <HoverCounterTwo />
         {/* <ClickCounter name='ZikaZaki' /> */}
         {/* <HoverCounter name='ZikaZaki'/> */}
         {/* <ErrorBoundary>
