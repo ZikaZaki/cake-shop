@@ -32,13 +32,18 @@ function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <Counter render={(count, incrementCount) => (
+       <Counter>
+        {(count, incrementCount) => (
           <ClickCounterTwo count={count} incrementCount={incrementCount} />
-        )} />
-        <Counter render={(count, incrementCount) => (
+        )}
+       </Counter>
+
+       <Counter>
+        {(count, incrementCount) => (
           <HoverCounterTwo count={count} incrementCount={incrementCount} />
-        )} />
-        
+        )}
+       </Counter>
+
         {/* <ClickCounterTwo />
         <HoverCounterTwo /> */}
         <User render={(isLoggedIn) => isLoggedIn ? 'ZikaZaki' : 'Guest'} />
