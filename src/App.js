@@ -28,12 +28,15 @@ import HoverCounterTwo from "./components/HoverCounterTwo";
 import User from "./components/User";
 import Counter from "./components/Counter";
 import CompC from "./components/CompC";
+import { UserProvider } from "./components/userContext";
 
 function App() {
   return (
-    <Provider store={store}>
+    // <Provider store={store}>
       <div className="App">
-        <CompC />
+        <UserProvider value="ZikaZaki">
+          <CompC />
+        </UserProvider>
 
        {/* <Counter>
         {(count, incrementCount) => (
@@ -80,7 +83,7 @@ function App() {
         <IceCreamContainer />
         <NewCakeContainer /> */}
       </div>
-    </Provider>
+    // </Provider>
   );
 }
 
