@@ -25,6 +25,7 @@ import ClickCounter from "./components/ClickCounter";
 import HoverCounter from "./components/HoverCounter";
 import ClickCounterTwo from "./components/ClickCounterTwo";
 import HoverCounterTwo from "./components/HoverCounterTwo";
+import User from "./components/User";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
       <div className="App">
         <ClickCounterTwo />
         <HoverCounterTwo />
+        <User />
         {/* <ClickCounter name='ZikaZaki' /> */}
         {/* <HoverCounter name='ZikaZaki'/> */}
         {/* <ErrorBoundary>
