@@ -33,7 +33,7 @@ function App() {
       <div className="App">
         <ClickCounterTwo />
         <HoverCounterTwo />
-        <User name={(isLoggedIn) => isLoggedIn ? 'ZikaZaki' : 'Guest'} />
+        <User render={(isLoggedIn) => isLoggedIn ? 'ZikaZaki' : 'Guest'} />
         {/* <ClickCounter name='ZikaZaki' /> */}
         {/* <HoverCounter name='ZikaZaki'/> */}
         {/* <ErrorBoundary>
