@@ -1,10 +1,9 @@
 import React, { Component } from "react"
+import CompF from "./CompF"
 
 class CompE extends Component {
   render() {
-    return (
-      <div>CompE</div>
-    )
+    return <CompF />
   }
 }
 
