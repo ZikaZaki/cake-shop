@@ -26,11 +26,13 @@ import HoverCounter from "./components/HoverCounter";
 import ClickCounterTwo from "./components/ClickCounterTwo";
 import HoverCounterTwo from "./components/HoverCounterTwo";
 import User from "./components/User";
+import Counter from "./components/Counter";
 
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
+        <Counter />
         <ClickCounterTwo />
         <HoverCounterTwo />
         <User render={(isLoggedIn) => isLoggedIn ? 'ZikaZaki' : 'Guest'} />
