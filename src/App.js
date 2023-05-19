@@ -36,8 +36,8 @@ function App() {
   return (
     // <Provider store={store}>
       <div className="App">
-        <PostList />
         <PostForm />
+        {/* <PostList /> */}
 
 
         {/* <UserProvider value="ZikaZaki"> */}

@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import axios from "axios"
 
 class PostForm extends Component {
   constructor(props) {
@@ -12,12 +13,19 @@ class PostForm extends Component {
   }
 
   changeHandler = (e) => {
-    this.setState({[e.targe.name]: e.target.value})
+    this.setState({[e.target.name]: e.target.value})
   }
 
   submitHandler = (e) => {
     e.preventDefault()
     console.log(this.state)
+    axios.post("https://jsonplaceholder.typicode.com/posts", this.state)
+      .then(response => {
+        console.log(response)
+      })
+      .catch(error => {
+        console.log(error)
+      })
   }
 
   render() {
