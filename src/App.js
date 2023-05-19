@@ -34,9 +34,9 @@ function App() {
   return (
     // <Provider store={store}>
       <div className="App">
-        <UserProvider value="ZikaZaki">
+        {/* <UserProvider value="ZikaZaki"> */}
           <CompC />
-        </UserProvider>
+        {/* </UserProvider> */}
 
        {/* <Counter>
         {(count, incrementCount) => (
