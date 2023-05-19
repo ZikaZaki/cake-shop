@@ -29,11 +29,15 @@ import User from "./components/User";
 import Counter from "./components/Counter";
 import CompC from "./components/CompC";
 import { UserProvider } from "./components/userContext";
+import PostList from "./components/Post/PostList";
 
 function App() {
   return (
     // <Provider store={store}>
       <div className="App">
+        <PostList />
+
+
         {/* <UserProvider value="ZikaZaki"> */}
           {/* <CompC /> */}
         {/* </UserProvider> */}
