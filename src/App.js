@@ -30,12 +30,14 @@ import Counter from "./components/Counter";
 import CompC from "./components/CompC";
 import { UserProvider } from "./components/userContext";
 import PostList from "./components/Post/PostList";
+import PostForm from "./components/Post/PostForm";
 
 function App() {
   return (
     // <Provider store={store}>
       <div className="App">
         <PostList />
+        <PostForm />
 
 
         {/* <UserProvider value="ZikaZaki"> */}
